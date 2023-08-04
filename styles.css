@@ -22,16 +22,35 @@ body {
 }
 
 /* Page Content Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     padding: 20px;
 }
 
-.section {
-    margin-bottom: 40px;
+.page-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.section h2 {
+.left-section {
+    flex: 0 0 calc(30% - 20px);
     margin-bottom: 20px;
+}
+
+.left-section img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.right-section {
+    flex: 0 0 calc(70% - 20px);
 }
 
 /* Flexbox Styles */

@@ -22,11 +22,52 @@
 
     <!-- Page Content -->
     <div class="container">
-        <div class="section" id="about">
-            <h2>About Me</h2>
-            <p>
-                Introduce yourself here. Briefly describe your background, strengths, and career objectives.
-            </p>
+        <div class="page-content">
+            <!-- Left Section (Photo) -->
+            <div class="left-section">
+                <img src="/images/me.png" alt="Your Photo">
+            </div>
+            <!-- Right Section (Music Player) -->
+            <div class="right-section">
+                <h2 style="text-align: center;">WELCOME TO MY PAGE</h2>
+                <p>
+                    Hello! I am [Your Name]. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt
+                    elit et nisl euismod posuere. In sollicitudin bibendum facilisis. Aenean tincidunt pharetra enim,
+                    vitae tincidunt metus euismod ac. Proin sit amet metus nec sapien accumsan vulputate. Donec
+                    euismod nunc sit amet libero vehicula facilisis. Nullam ut sapien ac libero fermentum congue nec ut
+                    mauris.
+                </p>
+                <!-- Music Player (Replace the src with the path to your audio file) -->
+                <aside class="music-player">
+                    <h2>Music Player</h2>
+                    <!-- Music Player -->
+                    <audio id="audioPlayer" controls onended="playNext()">
+                        <!-- Replace the src with the path to your audio files -->
+                        <source src="/audio/One Piece OP 1 - We Are! Lyrics.mp3" type="audio/mpeg">
+                        <source src="/audio/E.A.T. Theme Song.mp3" type="audio/mpeg">
+                        <!-- Add more <source> elements for additional audio files -->
+                        Your browser does not support the audio element.
+                    </audio>
+                </aside>
+
+                <script>
+                    const audioPlayer = document.getElementById('audioPlayer');
+                    const audioSources = [
+                        "/audio/One Piece OP 1 - We Are! Lyrics.mp3",
+                        "/audio/E.A.T. Theme Song.mp3"
+                        // Add more audio file names to the array as needed
+                    ];
+                
+                    let currentSong = 0;
+                
+                    function playNext() {
+                        currentSong = (currentSong + 1) % audioSources.length;
+                        audioPlayer.src = audioSources[currentSong];
+                        audioPlayer.play();
+                    }
+                </script>
+
+            </div>
         </div>
     </div>
 
@@ -35,9 +76,9 @@
     <div class="container">
         <div class="footer-content">
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/regie-calilap-a04014287/" target="_blank"><img src="/images/linkedin.png" width="30px" alt="LinkedIn"></a>
-                <a href="https://www.facebook.com/regiecalilap" target="_blank"><img src="/images/facebook.png" width="30px" alt="Facebook"></a>
-                <a href="https://github.com/regie-KodeGo" target="_blank"><img src="/images/github.png" width="40px" alt="Github"></a>
+                <a href="https://www.linkedin.com/in/regie-calilap-a04014287/" target="_blank"><img src="/images/linkedin.png" width="30" alt="LinkedIn"></a>
+                <a href="https://www.facebook.com/regiecalilap" target="_blank"><img src="/images/facebook.png" width="30" alt="Facebook"></a>
+                <a href="https://github.com/regie-KodeGo" target="_blank"><img src="/images/github.png" width="40" alt="Github"></a>
             </div>
             <div class="contact-info">
                 <p>Email: <a href="mailto:info@pyxislogistics.net">info@pyxislogistics.net</a></p>
