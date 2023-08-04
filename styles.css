@@ -1,7 +1,10 @@
+/* styles.css */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 /* Top Navigation Bar Styles */
@@ -22,12 +25,6 @@ body {
 }
 
 /* Page Content Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 .container {
     padding: 20px;
 }
@@ -79,19 +76,37 @@ body {
     margin: 0;
 }
 
+/* Custom Styles for Work Experience Section */
+.work-experience {
+    margin-bottom: 30px;
+}
+
+.work-experience h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.work-experience .dates {
+    font-style: italic;
+}
+
+.work-experience ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Custom Styles for Education Section */
+.education h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.education em {
+    font-style: italic;
+}
+
 /* Custom Styles for Footer */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-}
-
-.container {
-    flex: 1;
-}
-
-.footer {
+footer {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
