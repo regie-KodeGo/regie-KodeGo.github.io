@@ -45,3 +45,37 @@ body {
     flex: 0 0 calc(33.33% - 20px);
     margin-bottom: 20px;
 }
+
+/* Custom Styles for About Me Section */
+.about-content {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Custom Styles for Footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    flex: 1;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
