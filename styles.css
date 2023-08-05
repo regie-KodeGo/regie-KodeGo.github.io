@@ -105,8 +105,23 @@ body {
     font-style: italic;
 }
 
-/* Custom Styles for Footer */
-footer {
+/* Sticky Footer Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.footer {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
@@ -130,8 +145,4 @@ footer {
 
 .contact-info {
     text-align: right;
-}
-
-.contact-info p {
-    margin: 5px 0;
 }
